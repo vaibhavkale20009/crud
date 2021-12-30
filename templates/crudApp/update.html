@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+    <body>
+        <div>
+            <h1>Employee data updation form</h1>
+        <form method="post">
+
+
+            <input type="text" name="emid" value="{{emp.emid}}">
+            <input type="text" name="emname" value="{{emp.emname}}">
+            <input type="text" name="empsalary" value="{{emp.emsalary}}">
+            <input type="text" name="emadd" value="{{emp.emadd}}">
+
+            <input type="submit" value="update">
+            
+            {% csrf_token %}
+
+
+        </form>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1> employee information</h1>
+    <div class="container" aling="center">
+    <table style= "border :1px solid">
+        <thead>
+
+            <th> Employee id</th>
+            <th> Employee name</th>
+            <th> Employee Salary</th>
+            <th> Employee Address</th>
+       </thead>
+       {% if emp %}
+
+       {% for em in emp %}
+        
+        <tr>
+            <td> {{em.emid}} </td>
+            <td>{{em.emname}}</td>
+            <td>{{em.emsalary}}</td>
+            <td>{{em.emadd}}</td>
+            <td><a href="/upd"> Update </a></td>
+            <td><a href="/del"> Delete </a></td>
+        </tr>
+       {% endfor %}
+       {% endif %}
+      
+      
+
+    </table>
+    </div>
+
+</body>
+</html>
